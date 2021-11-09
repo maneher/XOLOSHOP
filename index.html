@@ -6,16 +6,48 @@
         <link rel="icon" type="image/x-icon" href="iconmonstr-tag-21.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+.mainmenubtn {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+}
+.mainmenubtn:hover {
+    background-color: blue;
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    background-color: skyblue;
+    min-width: 200px;
+}
+.dropdown-child a {
+    color: blue;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+</style>
     </head>    
     <body>
     
 <header>
     
-    <nav class= "menu"> 
         
         <img src="XOLO.png" aling alt="left" width="500" height="350">
-
-        <ul>
+    
+<div class="dropdown">
+  <button class="mainmenubtn">Main Menu</button>
+  <div class="dropdown-child">
             
             <li><a href="index.html">INICIO</a></li>
             <li><a class="menu" href="#about">ACERCA DE NOSOTROS</a></li>
@@ -24,10 +56,8 @@
             <li><a class="menu" href="#contact">CONTACTO</a></li>
             <li><a class="menu" href="#direction">DIRECCIÓN</a></li>
             <li><a class="menu" href="#help">QUEJAS</a></li>
-    
-        </ul>
-        
-    </nav>
+    </div>
+    </div>
     
 </header>
 
