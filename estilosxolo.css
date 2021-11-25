@@ -1,0 +1,64 @@
+#menu{
+    background-color: burlywood;
+}
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+#menu ul li{
+    display: inline-block;
+    padding: 5px;
+}
+#menu ul li a{
+    color: brown;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+#menu ul li a: hover{ 
+    background-color: floralwhite;    
+}
+.slider {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+div.about img.izquierda {
+  float: left;
+  margin-right: 15px;
+}
+
+.slider ul {
+display: flex;
+padding: 0;
+width: 400%;
+    
+    animation: deslizar 20s infinite alternate;
+    animation-timing-function: ease-out;
+}
+
+.slider li {
+width: 100%;
+list-style: none;
+}
+
+.slider img {
+width: 100%;
+}
+
+@keyframes deslizar {
+    0% {margin-left: 0%; }
+    20% {margin-left: 0%; }
+    
+    25% {margin-left: -100%; }
+    45% {margin-left: -100%; }
+    
+    50% {margin-left: -200%; }
+    70% {margin-left: -200%; }
+    
+    75% {margin-left: -300%; }
+    100% {margin-left: -300%;}   
+}
